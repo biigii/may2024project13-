@@ -10,18 +10,13 @@ html, body {
 }
 
 p {
-  font-size: 2em;
-  background-color: #c110e5;
+  font-size: 3em;
 }
 
 section {
-  height: 100%;
-  background-color: #000;
   display: grid;
+  place-items: center;
+  background-color: #eee;
+  height: 100%;
   gap: 10px;
-  grid-template-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-columns: 2fr 1fr 3fr;
-  grid-template-columns: 100fr 200fr;
 }/*# sourceMappingURL=main.css.map */
