@@ -12,84 +12,38 @@ html, body {
     font-family: $font;
 }
 
-header {
-    height: 150px;
+p {
+    font-size: 2em;
     background-color: $primary-color;
-    nav {
-        height: 100%;
-        display: flex;
-        gap: 50px;
-        justify-content: center;
-        align-items: center;
-        a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: capitalize;
-        }
-    }
-    margin-bottom: 30px;
 }
 
-h1 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 3em;
-}
+// article {
+//     height: 100%;
+//     display: grid;
+//     grid-auto-flow: column;
+// }
 
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
+section {
+    height: 100%;
+    background-color: #000;
+    // display grid
+    display: grid;
+    // grid-auto-flow: column;
+    gap: 10px;
+    // grid-template-columns
+    // grid-template-rows
+    //  default auto flow is to create a new row
+    // grid-template-columns: 300px 300px 300px;
+    // grid-template-columns: repeat(4, 300px);
+    // grid-template-rows: 200px 150px 400px;
+    // here we are creating a grid of 3x3
+    // grid-template-columns: 200px 300px 200px;
+    // grid-template-rows: 200px 300px 400px;
 
-.row {
-    display: flex;
-}
-
-//  type, class, id, attr selector
-ul.list {
-    margin-bottom: 50px;
-    list-style-position: inside;
-    background-color: #eee;
-    // li:first-child {
-    //     border: 2px solid;
-    // }
-    // li:last-child {
-    //     background-color: #f11;
-    // }
-
-    // li:nth-child(3) {
-    //     font-size: 2em;
-    //     background-color: yellow;
-    // }
-
-    li:not(:last-child) {
-        font-size: 2em
-    }
-}
-
-.text p {
-    // border: 2px dashed;
-    margin-bottom:  10px;
-}
-
-.text > p {
-    // border: 2px dashed;
-}
-
-.text h4 + p {
-    // border: 2px dotted;
-}
-
-nav a:not(.middle-one) {
-    text-decoration: underline;
-    color: yellow;
-}
-
-a[href="./contact.html"] {
-    font-size: 2em
-}
-
-section:has(img) {
-    border: 10px solid;
+    //  we have a unit in grid called fr  = fraction
+    grid-template-columns: 1fr; // this is like 100% 1 / 1
+    grid-template-columns: 1fr 1fr; // i have 2 parts here
+    grid-template-columns: 1fr 1fr 1fr; // 3 columns  1/3 1/3 1/3
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-columns: 100fr 200fr;
 }
