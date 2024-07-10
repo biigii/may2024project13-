@@ -1,0 +1,95 @@
+$primary-color: #c110e5;
+$font:"Poppins", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: $font;
+}
+
+header {
+    height: 150px;
+    background-color: $primary-color;
+    nav {
+        height: 100%;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3em;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.row {
+    display: flex;
+}
+
+//  type, class, id, attr selector
+ul.list {
+    margin-bottom: 50px;
+    list-style-position: inside;
+    background-color: #eee;
+    // li:first-child {
+    //     border: 2px solid;
+    // }
+    // li:last-child {
+    //     background-color: #f11;
+    // }
+
+    // li:nth-child(3) {
+    //     font-size: 2em;
+    //     background-color: yellow;
+    // }
+
+    li:not(:last-child) {
+        font-size: 2em
+    }
+}
+
+.text p {
+    // border: 2px dashed;
+    margin-bottom:  10px;
+}
+
+.text > p {
+    // border: 2px dashed;
+}
+
+.text h4 + p {
+    // border: 2px dotted;
+}
+
+nav a:not(.middle-one) {
+    text-decoration: underline;
+    color: yellow;
+}
+
+a[href="./contact.html"] {
+    font-size: 2em
+}
+
+section:has(img) {
+    border: 10px solid;
+}

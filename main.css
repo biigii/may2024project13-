@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 150px;
+  background-color: #c110e5;
+  margin-bottom: 30px;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3em;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+}
+
+ul.list {
+  margin-bottom: 50px;
+  list-style-position: inside;
+  background-color: #eee;
+}
+ul.list li:not(:last-child) {
+  font-size: 2em;
+}
+
+.text p {
+  margin-bottom: 10px;
+}
+
+nav a:not(.middle-one) {
+  text-decoration: underline;
+  color: yellow;
+}
+
+a[href="./contact.html"] {
+  font-size: 2em;
+}
+
+section:has(img) {
+  border: 10px solid;
+}/*# sourceMappingURL=main.css.map */
